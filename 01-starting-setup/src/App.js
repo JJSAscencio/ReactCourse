@@ -25,6 +25,11 @@ const App = () => {
     },
   ];
 
+  const addExpenseHandler = expense => {
+    console.log('In App.js');
+    console.log(expense);
+  }
+
   // return React.createElement( //Under THE HOOD CODE
   //   'div', {},
   //   React.createElement('h2', {}, "Let's get started!", 
@@ -33,9 +38,8 @@ const App = () => {
 
   return ( //JSX
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
-
     </div>
   );
 }
