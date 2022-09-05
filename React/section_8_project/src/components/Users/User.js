@@ -7,7 +7,6 @@ const User = (props) => {
                 <div>
                     <p>{props.name} {props.age} years old</p>
                 </div>
-
             </div>
         </li>
     )
